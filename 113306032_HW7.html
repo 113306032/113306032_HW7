@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="113306032_HW7.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 左側面板 -->
+        <div class="left-panel">
+            <div class="photo-panel">
+                <img src="1.jpeg" alt="Profile Photo">
+            </div>
+            <h1 id="name-display">李嘉皓</h1>
+            <input type="text" id="name-input" style="display: none;">
+            <button id="edit-btn">edit</button>
+            <div class="about-me">
+                <h2>ABOUT ME</h2>
+                <p>
+                    I am a freshman in the Department of Management Information Systems at National Chengchi University. 
+                    I am very interested in studying programming and computer science fundamentals. I have experience in 
+                    writing Java, HTML, CSS, JavaScript, and Python.
+                </p>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <p>113306032@g.nccu.edu.tw</p>
+            </div>
+            <img src="logo.png" alt="NCCU Logo" class="nccu-icon">
+        </div>
+
+        <!-- 右側面板 -->
+        <div class="right-panel">
+            <!-- 教育經歷 -->
+            <section class="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="entry">
+                        <span>2023 - now</span> National Chengchi University, Department of MIS
+                    </div>
+                    <div class="entry">
+                        <span>2021 - 2023</span> Taipei Municipal Lishan Senior High School
+                    </div>
+                    <div class="entry">
+                        <span>2018 - 2021</span> Taipei Municipal Tianmu Junior High School
+                    </div>
+                </div>
+            </section>
+
+            <!-- 功課清單 -->
+            <section class="homework">
+                <h2>Homework List</h2>
+                <ul>
+                    <li><a href="#">HW1</a></li>
+                    <li><a href="#">HW2</a></li>
+                    <li><a href="#">HW3</a></li>
+                </ul>
+            </section>
+
+            <!-- 最愛音樂 -->
+            <section class="favorite-music">
+                <h2>Favorite Music</h2>
+                <div class="albums">
+                    <div class="album-item">
+                        <a href="https://www.youtube.com/watch?v=HfWLgELllZs" target="_blank">
+                            <img src="spotify.png" alt="Music 1 Icon" width="40">
+                        </a>
+                        <p>luther</p>
+                    </div>
+
+                    <div class="album-item">
+                        <a href="https://www.youtube.com/watch?v=4Lmcadu8ghM" target="_blank">
+                            <img src="spotify.png" alt="Music 2 Icon" width="40">
+                        </a>
+                        <p>Soft Spot</p>
+                    </div>
+
+                    <div class="album-item">
+                        <a href="https://www.youtube.com/watch?v=16KSivdIGjQ" target="_blank">
+                            <img src="spotify.png" alt="Music 3 Icon" width="40">
+                        </a>
+                        <p>Sticky</p>
+                    </div>
+
+                    <div class="album-item">
+                        <a href="https://www.youtube.com/watch?v=U8F5G5wR1mk" target="_blank">
+                            <img src="spotify.png" alt="Music 4 Icon" width="40">
+                        </a>
+                        <p>tv off</p>
+                    </div>
+                    </div>
+                        <button id="add-btn">add</button>
+                        <div id="music-form" style="display: none;">
+                            <input type="text" id="music-link" placeholder="輸入音樂連結">
+                            <input type="text" id="music-name" placeholder="輸入音樂名稱">
+                            <button id="submit-btn">提交</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="113306032_HW7.js"></script>
+</body>
+</html>
